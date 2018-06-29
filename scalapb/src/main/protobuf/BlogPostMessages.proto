@@ -1,0 +1,18 @@
+/**
+ * Copyright (C) 2014-2017 Lightbend Inc. <http://www.lightbend.com>
+ */
+package info.batey.akka;
+
+option java_package = "info.batey.akka";
+option optimize_for = SPEED;
+
+message Post {
+    required string postId = 1;
+    optional string title = 2;
+    optional string body = 3;
+}
+
+message Message {
+    required string messageId = 1;
+    optional string body = 3;
+}
